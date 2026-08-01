@@ -38,7 +38,7 @@ Reference for the extract, transform, quality-check, load, and optimization stag
   - *Advanced:* window functions, self joins, union, and except — used for (1) deduplication, (2) sessionization/attribution, and (3) multi-source fact data.
 - **Quality check — Reconciliation:** `COUNT(*)` in the output vs `COUNT(*)` in the input.
 - **Load:** Insert overwrite partition.
-- **Optimization — Storage:** Partition by `day(created_at)`.
+- **Optimization — Storage:** Partition by `year or month or day of (created_at)`.
 - **Optimization — Code:** Broadcast-join the mapping tables. Window functions and self joins reduce data shuffle when combined with SPJ (Storage-Partitioned Join) and partition pruning.
 
 ### Dimension tables

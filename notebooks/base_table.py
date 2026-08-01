@@ -85,6 +85,19 @@ def run(spark: SparkSession, start_time: str, end_time: str) -> None:
 
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description=f"{TABLE_NAME} ETL")
+    parser.add_argument(
+        "--start-time",
+        required=True,
+        help="Start time (inclusive), format: YYYY-MM-DD HH:MM:SS",
+    )
+    parser.add_argument(
+        "--end-time",
+        required=True,
+        help="End time (exclusive), format: YYYY-MM-DD HH:MM:SS",
+    )
+    args = parser.parse_args()
+
     spark = SparkSession.builder.appName(TABLE_NAME).master("local[*]").getOrCreate()
     spark.sparkContext.setLogLevel("ERROR")
-    run(spark)
+    run(spark, args.start_time, args.end_time)

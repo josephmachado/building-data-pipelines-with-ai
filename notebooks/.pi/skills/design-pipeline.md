@@ -40,8 +40,9 @@ Reference for the extract, transform, quality-check, load, and optimization stag
   - *Advanced:* window functions, self joins, union, and except — used for (1) deduplication, (2) sessionization/attribution, and (3) multi-source fact data.
 - **Quality check — Reconciliation:** `COUNT(*)` in the output vs `COUNT(*)` in the input.
 - **Load:** Insert overwrite partition.
-- **Optimization — Storage:** Partition by `day(created_at)`.
+- **Optimization — Storage:** Partition by `year or month or day of (created_at)`.
 - **Optimization — Code:** Broadcast-join the mapping tables. Window functions and self joins reduce data shuffle when combined with SPJ (Storage-Partitioned Join) and partition pruning.
+- **Script inputs:** Start and end timestamps as string
 
 ### Dimension tables
 
@@ -56,5 +57,6 @@ Reference for the extract, transform, quality-check, load, and optimization stag
 - **Load:** Overwrite the full table. For SCD2, use `MERGE INTO`.
 - **Optimization — Storage:** Not needed (data < 10 mil).
 - **Optimization — Code:** Not needed (data < 10 mil).
+- **Script inputs:** None
 
 **Glossary:** SPJ = Storage-Partitioned Join. SCD2 = Slowly Changing Dimension Type 2. Scheduler = Airflow/Dagster.

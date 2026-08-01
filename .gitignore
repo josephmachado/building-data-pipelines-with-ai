@@ -213,3 +213,5 @@ airflow/dbt/my_project/metastore_db/*
 notebooks/.Trash*
 
 notebooks/data/*
+notebooks/spark-warehouse/*
+
