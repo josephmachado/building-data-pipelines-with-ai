@@ -3,7 +3,7 @@ import argparse
 from pyspark.sql import DataFrame, SparkSession
 from pyspark.sql import functions as F
 
-TABLE_NAME = "local.silver.fct_orders"
+TABLE_NAME = "silver.fct_orders"
 
 def extract(
     spark: SparkSession,
@@ -12,14 +12,14 @@ def extract(
 ) -> dict[str, DataFrame]:
     orders_df = spark.sql(f"""
     SELECT * 
-    FROM prod.db.orders
+    FROM prod.orders
     WHERE o_orderdate >= '{start_time}'
     AND o_orderdate < '{end_time}'
     """)
 
     dim_date_df = spark.sql(f"""
     SELECT * 
-    FROM prod.db.dim_date
+    FROM prod.dim_date
     """)
 
     return {"orders": orders_df, "dim_date": dim_date_df}

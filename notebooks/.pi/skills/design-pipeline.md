@@ -23,7 +23,7 @@ This skill runs as a two-stage, approval-gated process. Do not skip an approval 
 ## 2. Create the ETVL script for the outputs
 
 - Determine whether the table to be created is a **fact** or a **dimension** table.
-- Use the code template at `base_table.py`.
+- Use the code template at `/home/app/notebooks/base_table.py`.
 - Follow the design patterns below to construct the pipeline script.
 - Show the pipeline script to the user and **wait for approval**.
 - Make changes as requested by the user. If a request conflicts with the design patterns below, inform the user of the conflict rather than silently applying it.

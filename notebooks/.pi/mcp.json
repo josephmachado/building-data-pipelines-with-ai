@@ -4,7 +4,7 @@
       "command": "/home/app/.venv/bin/python",
       "args": ["/home/app/notebooks/server.py"],
       "transport": "stdio",
-      "lifecycle": "eager"
+      "lifecycle": "lazy"
     }
   }
 }

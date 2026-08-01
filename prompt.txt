@@ -1,0 +1,1 @@
+line item facts, enriched with dim_date and enriched with computing extended price with discount and extended price with discount and tax

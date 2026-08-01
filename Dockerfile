@@ -68,6 +68,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
 RUN curl -fsSL https://pi.dev/install.sh | sh
 RUN pi install npm:pi-mcp-extension
+RUN pi install git:github.com/DietrichGebert/ponytail
 
 # command to start jupyter lab
 COPY startup.sh /startup.sh
