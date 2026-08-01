@@ -9,8 +9,6 @@ services:
       - "8888:8888"   # Jupyter Lab
       - "4040-4049:4040-4049" # Spark UI
       - '18080:18080' # Spark History Server
-      - "3000:3000"
-      - "9000:9000"
     volumes:
       - ./notebooks:/home/app/notebooks
     env_file:

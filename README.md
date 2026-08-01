@@ -3,8 +3,12 @@ Code for blog at > [StartDataEngineering](https://www.startdataengineering.com/)
 
 ## Setup 
 
+Create an account at [OpenCode Zen](https://opencode.ai/auth) to use it as an LLM provider.
+
 > [!IMPORTANT]
 > Enter your OpenCode API key at [.env.template](./.env.template) and rename the file to `.env`
+
+If you already use an LLM provider, see how to use that with [pi agent](https://pi.dev/docs/latest/providers).
 
 ### Local Setup (Recommended)
 
