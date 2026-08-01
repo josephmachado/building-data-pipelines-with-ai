@@ -13,5 +13,6 @@ services:
       - "9000:9000"
     volumes:
       - ./notebooks:/home/app/notebooks
-
+    env_file:
+      - .env
 

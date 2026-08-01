@@ -1,6 +1,10 @@
 
 Code for blog at > [StartDataEngineering](https://www.startdataengineering.com/)
+
 ## Setup 
+
+> [!IMPORTANT]
+> Enter your OpenCode API key at [.env.template](./.env.template) and rename the file to `.env`
 
 ### Local Setup (Recommended)
 
@@ -33,6 +37,7 @@ Open workshop notebook at [./notebooks/workshop.ipynb](./notebooks/workshop.ipyn
 1. [GitHub Account](https://github.com/)
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/josephmachado/building-data-pipelines-with-ai)
+
 Then start docker containers via the terminal as shown below.
 
 ```bash 
