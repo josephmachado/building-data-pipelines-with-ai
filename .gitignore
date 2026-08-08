@@ -215,3 +215,4 @@ notebooks/.Trash*
 notebooks/data/*
 notebooks/spark-warehouse/*
 
+notebooks/*lineitem*.py

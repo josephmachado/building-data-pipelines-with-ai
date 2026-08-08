@@ -1,0 +1,110 @@
+{
+  "name": "sde-ai-tutorial",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "sde-ai-tutorial",
+  "workspaceFolder": "/home/app",
+  "shutdownAction": "stopCompose",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "python.analysis.autoImportCompletions": true,
+        "python.analysis.fixAll": ["source.unusedImports"],
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "[python]": {
+          "editor.formatOnType": true,
+          "editor.formatOnSave": true,
+          "editor.codeActionsOnSave": {
+            "source.fixAll": "explicit",
+            "source.organizeImports": "explicit"
+          }
+        },
+        "editor.inlineSuggest.enabled": true,
+        "editor.lineHeight": 17,
+        "breadcrumbs.enabled": false,
+        "notebook.output.scrolling": true,
+        "jupyter.themeMatplotlibPlots": true,
+        "jupyter.widgetScriptSources": ["unpkg.com", "jsdelivr.com"],
+        "files.exclude": {
+          "**/__pycache__": true,
+          "**/.cache": true,
+          "**/.coverage": true,
+          "**/.coverage.*": true,
+          "**/.hypothesis": true,
+          "**/.mypy_cache": true,
+          "**/.nox": true,
+          "**/.pytest_cache": true,
+          "**/.ruff_cache": true,
+          "**/.tox": true
+        },
+        "workbench.iconTheme": "material-icon-theme",
+        "sqltools.formatLanguages": ["sql"],
+        "[sql]": {
+          "editor.formatOnSave": true,
+          "editor.defaultFormatter": "mtxr.sqltools"
+        },
+        "dataWrangler.startInEditModeForNotebookEntrypoints": true,
+        "sqltools.useNodeRuntime": true,
+        "workbench.editorAssociations": {
+          "file:/**/*.parquet": "jupyter-data-wrangler"
+        },
+        "remote.autoForwardPortsSource": "hybrid",
+        "python.analysis.typeCheckingMode": "basic",
+        "python.analysis.supportAllPythonDocuments": true,
+        "workbench.secondarySideBar.defaultVisibility": "hidden",
+        "python.languageServer": "Pylance",
+        "quarto.render.renderOnSave": true,
+        "quarto.render.previewType": "external",
+        "workbench.colorTheme": "Gruvbox Dark Hard",
+        "vsicons.dontShowNewVersionMessage": true,
+        "ty.disableLanguageServices": true,
+        "claudeCode.preferredLocation": "panel",
+        "extensions.experimental.affinity": {
+          "asvetliakov.vscode-neovim": 1
+        },
+        "[jsonc]": {
+          "editor.defaultFormatter": "vscode.json-language-features"
+        }
+      },
+      "extensions": [
+        "aaron-bond.better-comments",
+        "adpyke.codesnap",
+        "akil-s.tokyo-dark",
+        "anthropic.claude-code",
+        "astral-sh.ty",
+        "bierner.markdown-mermaid",
+        "charliermarsh.ruff",
+        "correiagithubgruvbox.correia-github-gruvbox",
+        "databricks.sqltools-databricks-driver",
+        "davidanson.vscode-markdownlint",
+        "docker.docker",
+        "eamodio.gitlens",
+        "github.github-vscode-theme",
+        "humao.rest-client",
+        "jdinhlife.gruvbox",
+        "marimo-team.vscode-marimo",
+        "mechatroner.rainbow-csv",
+        "ms-azuretools.vscode-containers",
+        "ms-azuretools.vscode-docker",
+        "ms-python.debugpy",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-python.vscode-python-envs",
+        "ms-toolsai.datawrangler",
+        "ms-toolsai.jupyter",
+        "ms-toolsai.jupyter-keymap",
+        "ms-toolsai.jupyter-renderers",
+        "ms-toolsai.vscode-jupyter-cell-tags",
+        "ms-toolsai.vscode-jupyter-slideshow",
+        "ms-vscode.makefile-tools",
+        "mtxr.sqltools",
+        "njpwerner.autodocstring",
+        "pkief.material-icon-theme",
+        "quarto.quarto",
+        "streetsidesoftware.code-spell-checker",
+        "tamasfe.even-better-toml",
+        "vscode-icons-team.vscode-icons",
+        "yzhang.markdown-all-in-one"
+      ]
+    }
+  }
+}
