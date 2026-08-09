@@ -1,1 +1,2 @@
-line item facts, enriched with dim_date and enriched with computing extended price with discount and extended price with discount and tax
+line item facts, enriched with dim_date and enriched with computing extended price with discount and extended price with discount and tax.
+Call this script fct_lineitem.py

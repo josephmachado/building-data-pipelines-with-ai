@@ -1,4 +1,4 @@
-## Setup 
+## Create Data 
 
 Open a terminal in this directory.
 
@@ -37,8 +37,6 @@ Run the pipeline, it will fail due to memory issues.
 uv run python ./fct_lineitem.py --start-time 1995-01-01 --end-time 1996-01-01
 ```
 
-Add: movie
-
 ## Code Generation with LLM enabled by MCP
 
 Open pi agent and use the skill `design-pipeline`.
@@ -46,6 +44,7 @@ Open pi agent and use the skill `design-pipeline`.
 Let's start our `iceberg-mcp` MCP and then use this skill to enable LLMs to leverage the MCP server to make better design decision.
 
 ```bash 
+rm fct_lineitem.py
 pi
 /mcp:start iceberg-mcp 
 # wait a few minutes
