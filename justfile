@@ -23,3 +23,16 @@ airflow:
 restart:
   just down 
   just up
+
+# Start devcontainer
+dev-up:
+    devcontainer up --workspace-folder . --config .devcontainer/nvim/devcontainer.json
+
+# Stop devcontainer
+dev-down:
+    devcontainer down --workspace-folder . --config .devcontainer/nvim/devcontainer.json
+
+# Open nvim inside container, run as uv if you have setup uv python libraries
+nvim *args:
+    just dev-up
+    devcontainer exec --workspace-folder . --config .devcontainer/nvim/devcontainer.json uv run nvim {{args}}
