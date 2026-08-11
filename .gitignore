@@ -210,9 +210,9 @@ Footer
 .terraform.lock.hcl
 
 airflow/dbt/my_project/metastore_db/*
-notebooks/.Trash*
+code/.Trash*
 
-notebooks/data/*
-notebooks/spark-warehouse/*
+code/data/*
+code/spark-warehouse/*
 
-notebooks/*lineitem*.py
+code/*lineitem*.py

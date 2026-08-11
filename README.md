@@ -8,6 +8,7 @@ Code for blog at > [How to Use AI to 10x Data Pipeline Dev Speed](https://www.st
 1. [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 2. [Docker](https://docs.docker.com/engine/install/) and [Docker Compose](https://docs.docker.com/compose/install/)
 3. [OpenCode Zen](https://opencode.ai/auth)
+4. [VSCode with Dev Containers](https://code.visualstudio.com/docs/devcontainers/containers)
 
 **Windows users**: Please use WSL and Install Ubuntu using this [document](https://documentation.ubuntu.com/wsl/stable/howto/install-ubuntu-wsl2/#). In your ubuntu terminal install the prerequisites above.
 

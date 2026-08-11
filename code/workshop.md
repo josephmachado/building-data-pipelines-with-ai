@@ -1,15 +1,3 @@
-## Create Data 
-
-Open a terminal in this directory.
-
-Create data and tables as shown below.
-
-```bash
-cd notebooks
-uv run python ./generate_data.py 
-uv run python ./run_ddl.py
-```
-
 ## Run Pipeline
 
 Run the pipeline that generates the table `fct_orders` using the command below.
@@ -57,5 +45,6 @@ pi
 Run the pipeline, it will pass, as the MCP info would enable LLM to design the pipeline appropriately.
 
 ```bash 
-uv run python ./silver_fct_lineitem.py --start-time 1995-01-01 --end-time 1996-01-01
+uv run python ./fct_lineitem.py --start-time 1995-01-01 --end-time 1996-01-01
+rm fct_lineitem.py
 ```

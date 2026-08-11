@@ -1,7 +1,0 @@
-{
-  "name": "sde-ai-tutorial",
-  "dockerComposeFile": "../docker-compose.yml",
-  "service": "sde-ai-tutorial",
-  "workspaceFolder": "/home/app",
-  "shutdownAction": "stopCompose"
-}

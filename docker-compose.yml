@@ -10,7 +10,7 @@ services:
       - "4040-4049:4040-4049" # Spark UI
       - '18080:18080' # Spark History Server
     volumes:
-      - ./notebooks:/home/app/notebooks
+      - ./code:/home/app
     env_file:
       - .env
 

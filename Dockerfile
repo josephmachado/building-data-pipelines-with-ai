@@ -57,8 +57,8 @@ RUN sh /uv-installer.sh && rm /uv-installer.sh
 ENV PATH="/root/.local/bin/:$PATH"
 
 ENV PYTHON_VERSION=3.13
-RUN uv init --bare --python 3.13
-RUN uv add jupyterlab pyspark pyspark[sql] duckdb jupysql duckdb-engine "grpcio-status>=1.48.1" "zstandard>=0.25.0" grpcio googleapis-common-protos pyarrow toml mcp[cli]
+# RUN uv init --bare --python 3.13
+# RUN uv add jupyterlab pyspark pyspark[sql] duckdb jupysql duckdb-engine "grpcio-status>=1.48.1" "zstandard>=0.25.0" grpcio googleapis-common-protos pyarrow toml mcp[cli]
 
 # Install Node.js 22 LTS + npm on Debian Bookworm
 RUN apt-get update && apt-get install -y --no-install-recommends \
